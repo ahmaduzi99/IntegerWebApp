@@ -1,0 +1,13 @@
+﻿@model List<Student>;
+<h2>Ini dari controller student</h2>
+
+@foreach (var data in Model)
+{
+    <p>Id : @data.Id</p>
+    <p>Name : @data.Name</p>
+    <p>Address : @data.Address</p>
+    <p>Phone Number : @data.PhoneNumber</p>
+    <hr />
+}
+
+<a asp-controller="Home" asp-action="Index">Kembali Home</a>
